@@ -1,25 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import AppRouter from './components/AppRouter';
+import TopNav from './components/TopNav';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  return <AppRouter>
+    <TopNav />
+    <div
+      id="snipcart"
+      data-api-key="NWMwZWNkZGMtZjU2ZS00YzM3LWFlZjYtMmM5Zjk0MWViZDcxNjM3Njg0OTY0ODg5NTk4MTM3" hidden
+    >
     </div>
-  );
+  </AppRouter>
 }
 
 export default App;
